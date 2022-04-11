@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="eng">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>RGU Marketing SignUp</title>
+        <link rel="stylesheet" href="/RguMarketingProject/assets/css/signupstyle.css"/>
+        <!--<link href="/circusFinal/assets/css/bootstrap.css" rel="stylesheet">-->
+        <link rel="stylesheet" href="/RguMarketingProject/assets/font-awesome-4.7.0/font-awesome-4.7.0/css/font-awesome.min.css">
+        </head>
+    <body>
+        <!-- Load an image to show a hamburger menu for all screens-->
+
+        <!--Responsive Navigation Bar STARTS-->
+        <div class="navbar" id="myNavBar">
+            <a href="#" class="active">HOME</a>
+            <a href="/RguMarketingProject/contactus.html">CONTACT US</a>
+            <a href="#">GALLERY</a>
+            <a href="#">EVENT CALENDAR</a>
+            <a href="#">MEMBERS</a>
+            <a href="/RguMarketingProject/signup.html">SIGN UP</a>
+            <a href="#">ABOUT US</a>
+            <a href="#">MORE ON RGU</a>
+            <a href="javascript:void(0);" class="hamburger" onclick="myFunction()">
+            <i class="fa fa-bars" aria-hidden="true"></i>
+            </a>
+          </div>
+         <!--Include links-->
+
+         <!--Responsive navbar and text, need to check how works with forms-->
+         <!-- SignUp form STARTS-->
+         <div class="container">
+          <h1>Are you ready become a member of RGU Marketing?</h1>
+          <div class="main-container">
+            <div class="container-top">
+              <form action="#" method="post"> <!-- can be deleted check-->
+                <input class="text" type="text" name="Username" placeholder="Username" required="">
+                <input class="text email" type="email" name="email" placeholder="Email" required="">
+                <input class="text" type="password" name="password" placeholder="Password" required="">
+                <input class="text confirm" type="password" name="password" placeholder="Confirm Password" required="">
+                <div class="terms-text">
+                  <label class="container">
+                  <input type="checkbox" class="checkbox" required="">
+                  <span>I Agree To The Terms & Conditions</span>
+                  <input type="submit" value="SIGN UP">
+              <p>Do you have an Account? <a href="HOME"> Login Now!</a></p>
+            </div>
+          </div>
+         <!-- SignUp form ENDS-->
+          <script>
+            function myFunction() {
+              let x = document.getElementById("myNavBar");
+              if (x.className === "navbar") {
+                x.className += " responsive";
+              } else {
+                x.className = "navbar";
+              }
+            }
+            </script>
+            <!--Responsive Navigation Bar ENDS-->
+            <!-- copyright STARTS-->
+            <div class="copyright">
+              <p>For Robert Gordon University! Design by DOXX1011</p>
+            </div>
+            <!-- copyright ENDS-->
+           
+    </body>   
+</html>
